@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function PlugAndPlayBanner({ id }: { id?: string }) {
   return (
     <div id={id} className="bg-[hsl(var(--banner-background))] text-[hsl(var(--banner-foreground))] py-4">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Button variant="ghost" size="icon" className="text-[hsl(var(--banner-foreground))] hover:bg-white/20">
             <ChevronLeft className="h-6 w-6" />
