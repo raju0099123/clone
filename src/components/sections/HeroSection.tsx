@@ -60,7 +60,7 @@ export default function HeroSection() {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center p-3 sm:p-4 rounded-lg transform transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-md hover:-translate-y-1"
+                className="flex flex-col items-center text-center p-3 sm:p-4 rounded-lg transform transition-transform duration-500 ease-out hover:scale-105 hover:shadow-md hover:-translate-y-1"
                 role="figure"
                 aria-labelledby={`stat-label-${index}`}
               >
