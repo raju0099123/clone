@@ -33,19 +33,19 @@ export default function HeroSection() {
   return (
     <SectionWrapper className="py-20 md:py-28 lg:py-32 bg-primary text-primary-foreground">
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-        <div className="space-y-4 md:space-y-6 text-center lg:text-left">
+        <div className="space-y-4 md:space-y-6 text-center lg:text-left lg:ml-8">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
             Underwriting Products
             <span className="block text-3xl sm:text-4xl lg:text-5xl font-semibold mt-1 sm:mt-2">Powered by</span>
             <span className="block text-4xl sm:text-5xl lg:text-6xl font-bold mt-1 sm:mt-2">Generative AI</span>
           </h1>
         </div>
-        <div className="relative aspect-square max-w-[160px] sm:max-w-[220px] md:max-w-[260px] lg:max-w-[300px] xl:max-w-[340px] mx-auto lg:mx-0 flex items-center justify-center">
+        <div className="relative aspect-square max-w-[140px] sm:max-w-[180px] md:max-w-[220px] lg:max-w-[260px] xl:max-w-[300px] mx-auto lg:mx-0 flex items-center justify-center">
           <Image
             src="https://nativeorange.ai/images/robot-image.png"
             alt="Generative AI Robot for Underwriting"
-            width={450}
-            height={450}
+            width={300} 
+            height={300}
             className="rounded-lg object-contain transform transition-all duration-500 hover:scale-105 animate-bobbing"
             data-ai-hint="orange robot ai"
             priority
