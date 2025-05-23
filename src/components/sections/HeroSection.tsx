@@ -46,7 +46,7 @@ export default function HeroSection() {
             alt="Generative AI Robot for Underwriting"
             width={280} 
             height={280}
-            className="rounded-lg object-contain transform transition-all duration-500 hover:scale-105 animate-subtle-bob" // Changed to animate-subtle-bob
+            className="rounded-lg object-contain transform transition-all duration-500 hover:scale-105 animate-subtle-bob"
             data-ai-hint="orange robot ai"
             priority
           />
@@ -54,7 +54,7 @@ export default function HeroSection() {
       </div>
 
       {/* Stats Bar */}
-      <div className="mt-12 md:mt-16 lg:mt-20">
+      <div className="mt-10 md:mt-12 lg:mt-16"> {/* Adjusted top margin here */}
         <div className="bg-card text-card-foreground p-6 sm:p-8 rounded-xl shadow-xl max-w-4xl mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
             {stats.map((stat, index) => (
