@@ -8,7 +8,7 @@ export default function PlugAndPlayBanner({ id }: { id?: string }) {
     <div id={id} className="bg-[hsl(var(--banner-background))] text-[hsl(var(--banner-foreground))] py-4">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <Button variant="ghost" size="icon" className="text-[hsl(var(--banner-foreground))] hover:bg-white/20">
+          <Button variant="ghost" size="icon" className="text-[hsl(var(--banner-foreground))] hover:bg-primary/10 transition-colors">
             <ChevronLeft className="h-6 w-6" />
             <span className="sr-only">Previous</span>
           </Button>
@@ -23,7 +23,7 @@ export default function PlugAndPlayBanner({ id }: { id?: string }) {
             </p>
           </div>
 
-          <Button variant="ghost" size="icon" className="text-[hsl(var(--banner-foreground))] hover:bg-white/20">
+          <Button variant="ghost" size="icon" className="text-[hsl(var(--banner-foreground))] hover:bg-primary/10 transition-colors">
             <ChevronRight className="h-6 w-6" />
             <span className="sr-only">Next</span>
           </Button>

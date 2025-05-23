@@ -43,7 +43,7 @@ export default function TestimonialsSection({ id }: { id?: string }) {
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {testimonials.map((testimonial) => (
-          <Card key={testimonial.name} className="shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+          <Card key={testimonial.name} className="shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 flex flex-col">
             <CardContent className="p-6 flex-grow flex flex-col justify-between">
               <div>
                 <div className="flex mb-3">

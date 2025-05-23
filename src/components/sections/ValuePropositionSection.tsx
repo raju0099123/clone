@@ -42,8 +42,8 @@ export default function ValuePropositionSection({ id }: { id?: string }) {
               <p className="text-foreground/70 text-lg">{prop.description}</p>
               <ul className="space-y-3">
                 {prop.points.map(point => (
-                  <li key={point} className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-primary mr-3 mt-1 shrink-0" />
+                  <li key={point} className="flex items-start group rounded-md p-1 -m-1 transition-colors hover:bg-muted/50">
+                    <CheckCircle className="w-5 h-5 text-primary mr-3 mt-1 shrink-0 transition-colors group-hover:text-accent" />
                     <span className="text-foreground/80">{point}</span>
                   </li>
                 ))}
