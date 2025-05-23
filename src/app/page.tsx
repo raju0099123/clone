@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <PlugAndPlayBanner id="announcement" />
+      {/* <PlugAndPlayBanner id="announcement" /> Removed to match new hero design */}
       <FeaturesSection id="features" />
       <ValuePropositionSection id="solutions" />
       <TestimonialsSection id="testimonials" />
