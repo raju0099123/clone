@@ -40,13 +40,13 @@ export default function HeroSection() {
             <span className="block text-4xl sm:text-5xl lg:text-6xl font-bold mt-1 sm:mt-2">Generative AI</span>
           </h1>
         </div>
-        <div className="relative aspect-square max-w-[180px] sm:max-w-[240px] md:max-w-[280px] lg:max-w-[320px] xl:max-w-[360px] mx-auto lg:mx-0 flex items-center justify-center">
+        <div className="relative aspect-square max-w-[160px] sm:max-w-[220px] md:max-w-[260px] lg:max-w-[300px] xl:max-w-[340px] mx-auto lg:mx-0 flex items-center justify-center">
           <Image
             src="https://nativeorange.ai/images/robot-image.png"
             alt="Generative AI Robot for Underwriting"
             width={450}
             height={450}
-            className="rounded-lg object-contain transform transition-all duration-500 hover:scale-105"
+            className="rounded-lg object-contain transform transition-all duration-500 hover:scale-105 animate-bobbing"
             data-ai-hint="orange robot ai"
             priority
           />
@@ -60,7 +60,7 @@ export default function HeroSection() {
             {stats.map((stat, index) => (
               <div 
                 key={index} 
-                className="flex flex-col items-center text-center p-3 sm:p-4 rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
+                className="flex flex-col items-center text-center p-3 sm:p-4 rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:-translate-y-1"
                 role="figure"
                 aria-labelledby={`stat-label-${index}`}
               >
