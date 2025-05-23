@@ -25,13 +25,13 @@ export default function HeroSection() {
           */}
           {/* Buttons removed as "Book a Demo" is in the header */}
         </div>
-        <div className="relative aspect-square max-w-md mx-auto lg:max-w-none lg:mx-0 rounded-lg transform transition-all duration-500 hover:scale-105 flex items-center justify-center">
+        <div className="relative aspect-square max-w-sm mx-auto lg:max-w-lg lg:mx-0 rounded-lg transform transition-all duration-500 hover:scale-105 flex items-center justify-center">
           <Image
             src="https://nativeorange.ai/images/robot-image.png"
             alt="Generative AI Robot for Underwriting"
             width={500} 
             height={500}
-            className="rounded-lg object-contain" // Changed to object-contain
+            className="rounded-lg object-contain" 
             data-ai-hint="orange robot ai"
             priority
           />
