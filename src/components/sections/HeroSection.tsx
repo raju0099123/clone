@@ -31,7 +31,7 @@ const stats = [
 
 export default function HeroSection() {
   return (
-    <SectionWrapper className="py-12 md:py-16 lg:py-20 bg-primary text-primary-foreground">
+    <SectionWrapper className="py-10 md:py-12 lg:py-16 bg-primary text-primary-foreground">
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <div className="space-y-4 md:space-y-6 text-center lg:text-left lg:ml-8">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
@@ -44,7 +44,7 @@ export default function HeroSection() {
           <Image
             src="https://nativeorange.ai/images/robot-image.png"
             alt="Generative AI Robot for Underwriting"
-            width={280} 
+            width={280}
             height={280}
             className="rounded-lg object-contain transform transition-all duration-500 hover:scale-105 animate-subtle-bob"
             data-ai-hint="orange robot ai"
@@ -54,12 +54,12 @@ export default function HeroSection() {
       </div>
 
       {/* Stats Bar */}
-      <div className="mt-10 md:mt-12 lg:mt-16"> {/* Adjusted top margin here */}
+      <div className="mt-10 md:mt-12 lg:mt-16">
         <div className="bg-card text-card-foreground p-6 sm:p-8 rounded-xl shadow-xl max-w-4xl mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
             {stats.map((stat, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="flex flex-col items-center text-center p-3 sm:p-4 rounded-lg transform transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-md hover:-translate-y-1"
                 role="figure"
                 aria-labelledby={`stat-label-${index}`}
