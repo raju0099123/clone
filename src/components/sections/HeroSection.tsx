@@ -31,7 +31,7 @@ const stats = [
 
 export default function HeroSection() {
   return (
-    <SectionWrapper className="py-16 md:py-20 lg:py-24 bg-primary text-primary-foreground">
+    <SectionWrapper className="py-12 md:py-16 lg:py-20 bg-primary text-primary-foreground">
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <div className="space-y-4 md:space-y-6 text-center lg:text-left lg:ml-8">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
@@ -60,7 +60,7 @@ export default function HeroSection() {
             {stats.map((stat, index) => (
               <div 
                 key={index} 
-                className="flex flex-col items-center text-center p-3 sm:p-4 rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:-translate-y-1"
+                className="flex flex-col items-center text-center p-3 sm:p-4 rounded-lg transform transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-md hover:-translate-y-1"
                 role="figure"
                 aria-labelledby={`stat-label-${index}`}
               >
