@@ -31,7 +31,7 @@ const stats = [
 
 export default function HeroSection() {
   return (
-    <SectionWrapper className="py-10 md:py-12 lg:py-16 bg-primary text-primary-foreground">
+    <SectionWrapper className="pt-3 bg-primary text-primary-foreground">
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <div className="space-y-4 md:space-y-6 text-center lg:text-left lg:ml-8">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
