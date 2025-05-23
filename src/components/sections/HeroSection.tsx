@@ -40,13 +40,13 @@ export default function HeroSection() {
             <span className="block text-4xl sm:text-5xl lg:text-6xl font-bold mt-1 sm:mt-2">Generative AI</span>
           </h1>
         </div>
-        <div className="relative aspect-square max-w-[140px] sm:max-w-[180px] md:max-w-[220px] lg:max-w-[260px] xl:max-w-[300px] mx-auto lg:mx-0 flex items-center justify-center">
+        <div className="relative aspect-square max-w-[120px] sm:max-w-[160px] md:max-w-[200px] lg:max-w-[240px] xl:max-w-[280px] mx-auto lg:mx-0 flex items-center justify-center">
           <Image
             src="https://nativeorange.ai/images/robot-image.png"
             alt="Generative AI Robot for Underwriting"
-            width={300} 
-            height={300}
-            className="rounded-lg object-contain transform transition-all duration-500 hover:scale-105 animate-bobbing"
+            width={280} 
+            height={280}
+            className="rounded-lg object-contain transform transition-all duration-500 hover:scale-105 animate-subtle-bob" // Changed to animate-subtle-bob
             data-ai-hint="orange robot ai"
             priority
           />

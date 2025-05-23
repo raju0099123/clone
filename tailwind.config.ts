@@ -87,7 +87,7 @@ export default {
             height: '0'
           }
         },
-        'bobbing': {
+        'subtleBob': { // Renamed from 'bobbing' and kept the transform values
           '0%, 100%': { transform: 'translateY(-3%)' },
           '50%': { transform: 'translateY(3%)' },
         }
@@ -95,7 +95,7 @@ export default {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'bobbing': 'bobbing 3s ease-in-out infinite',
+        'subtle-bob': 'subtleBob 3s ease-in-out infinite', // New animation class with 3s duration
       }
     }
   },
