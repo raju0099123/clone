@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function CallToActionSection({ id }: { id?: string }) {
   return (
     <SectionWrapper id={id} className="bg-gradient-to-r from-primary to-orange-500 text-primary-foreground">
-      <div className="text-center py-12 md:py-16">
+      <div className="text-center"> {/* Removed py-12 md:py-16 */}
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
           Ready to Modernize Your SaaS?
         </h2>
