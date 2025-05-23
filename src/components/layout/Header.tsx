@@ -1,22 +1,23 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, MountainIcon } from 'lucide-react';
+import { Menu, Bot, CalendarDays } from 'lucide-react'; // Changed MountainIcon to Bot, Added CalendarDays
 
 export default function Header() {
   const navItems = [
-    { label: 'Features', href: '#features' },
-    { label: 'Solutions', href: '#solutions' },
-    { label: 'Testimonials', href: '#testimonials' },
-    { label: 'Pricing', href: '#pricing' },
+    { label: 'About Us', href: '#about' }, // Updated: Placeholder, assuming an about section or page
+    { label: 'Our Products', href: '#products' }, // Updated: Placeholder, assuming a products section or page
+    // Removed Testimonials and Pricing to match the user's image
   ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 max-w-screen-2xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
-          <MountainIcon className="h-6 w-6 text-primary" />
-          <span className="text-xl font-bold text-foreground">SaaS Modernizer</span>
+          <Bot className="h-7 w-7 text-primary" /> {/* Updated Icon */}
+          <span className="text-xl font-bold text-foreground">
+            <span className="text-primary">native</span> orange
+          </span>
         </Link>
         
         <nav className="hidden md:flex items-center space-x-6">
@@ -31,7 +32,10 @@ export default function Header() {
             </Link>
           ))}
           <Button asChild size="sm" className="ml-4">
-            <Link href="#cta">Get Started</Link>
+            <Link href="#contact-demo"> {/* Updated href */}
+              <CalendarDays className="mr-2 h-4 w-4" /> {/* Added Icon */}
+              Book A Demo
+            </Link>
           </Button>
         </nav>
 
@@ -46,8 +50,10 @@ export default function Header() {
             <SheetContent side="right">
               <div className="grid gap-4 py-6">
                 <Link href="/" className="flex items-center gap-2 mb-4" prefetch={false}>
-                  <MountainIcon className="h-6 w-6 text-primary" />
-                  <span className="text-xl font-bold text-foreground">SaaS Modernizer</span>
+                  <Bot className="h-7 w-7 text-primary" /> {/* Updated Icon */}
+                  <span className="text-xl font-bold text-foreground">
+                     <span className="text-primary">native</span> orange
+                  </span>
                 </Link>
                 {navItems.map((item) => (
                   <Link
@@ -60,7 +66,10 @@ export default function Header() {
                   </Link>
                 ))}
                 <Button asChild size="lg" className="mt-4">
-                  <Link href="#cta">Get Started</Link>
+                  <Link href="#contact-demo"> {/* Updated href */}
+                    <CalendarDays className="mr-2 h-4 w-4" /> {/* Added Icon */}
+                    Book A Demo
+                  </Link>
                 </Button>
               </div>
             </SheetContent>
