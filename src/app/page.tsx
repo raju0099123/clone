@@ -8,9 +8,8 @@ import ValueForCarriersSection from '@/components/sections/ValueForCarriersSecti
 import ValuePropositionSection from '@/components/sections/ValuePropositionSection';
 import SecuritySystemSection from '@/components/sections/SecuritySystemSection';
 import AiAgentsSection from '@/components/sections/AiAgentsSection';
-import PlatformPartnersSection from '@/components/sections/PlatformPartnersSection'; // Added import
+import PlatformPartnersSection from '@/components/sections/PlatformPartnersSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
-import CallToActionSection from '@/components/sections/CallToActionSection';
 
 export default function Home() {
   return (
@@ -24,9 +23,8 @@ export default function Home() {
       <ValuePropositionSection id="solutions" />
       <SecuritySystemSection id="security-system" />
       <AiAgentsSection id="ai-agents" />
-      <PlatformPartnersSection id="platform-partners" /> {/* Added new section */}
+      <PlatformPartnersSection id="platform-partners" />
       <TestimonialsSection id="testimonials" />
-      <CallToActionSection id="cta" />
       {/* Placeholder for Pricing Section if added later */}
       {/* <PricingSection id="pricing" /> */}
     </>
