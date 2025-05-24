@@ -4,6 +4,7 @@
 import * as React from 'react';
 import type { LucideIcon } from 'lucide-react';
 import { Building2, FileText } from 'lucide-react';
+import Image from 'next/image'; // Added import for Image
 import SectionWrapper from '@/components/shared/SectionWrapper';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
@@ -65,8 +66,8 @@ interface CircleDiagramProps {
 const CircleDiagram: React.FC<CircleDiagramProps> = ({ labels }) => {
   const labelPositionsOuter = [
     { top: '5%', left: '50%', transform: 'translateX(-50%)' }, // Top-Center
-    { top: '50%', left: '1%', transform: 'translateY(-50%)' },  // Middle-Left (Adjusted from 2%)
-    { top: '50%', right: '1%', transform: 'translateY(-50%)' }, // Middle-Right (Adjusted from 2%)
+    { top: '50%', left: '1%', transform: 'translateY(-50%)' },  // Middle-Left
+    { top: '50%', right: '1%', transform: 'translateY(-50%)' }, // Middle-Right
     { bottom: '5%', left: '50%', transform: 'translateX(-50%)' }, // Bottom-Center
   ];
    const labelPositionsInner = [
@@ -83,10 +84,15 @@ const CircleDiagram: React.FC<CircleDiagramProps> = ({ labels }) => {
       {/* Inner Ring / Content Area Background */}
       <div className="absolute inset-[36%] rounded-full bg-orange-300 dark:bg-orange-500/40 opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
       {/* Central Circle */}
-      <div className="absolute inset-[40%] rounded-full bg-white dark:bg-card flex flex-col items-center justify-center shadow-xl border border-gray-200 dark:border-gray-700">
-        <NativeOrangeNIcon size="sm" />
-        <span className="text-xs font-semibold text-primary mt-1">native</span>
-        <span className="text-xs font-semibold text-foreground">orange</span>
+      <div className="absolute inset-[40%] rounded-full bg-white dark:bg-card flex items-center justify-center shadow-xl border border-gray-200 dark:border-gray-700 p-1">
+        <Image
+            src="https://nativeorange.ai/images/navtiveorange-logo.png"
+            alt="Native Orange Logo"
+            width={60} 
+            height={16} 
+            className="object-contain"
+            data-ai-hint="company logo"
+          />
       </div>
       {/* Labels */}
       {labels.slice(0, 4).map((label, index) => (
@@ -98,7 +104,7 @@ const CircleDiagram: React.FC<CircleDiagramProps> = ({ labels }) => {
           {label}
         </div>
       ))}
-       {labels.slice(4, 6).map((label, index) => ( // Handles 5th and potentially 6th label
+       {labels.slice(4, 6).map((label, index) => ( 
         <div
           key={label}
           className="absolute px-2 py-1 bg-background border border-border rounded-md shadow-md text-xs text-foreground/80 group-hover:shadow-lg transition-shadow duration-300 w-auto max-w-[80px] sm:max-w-24 text-center"
@@ -166,7 +172,7 @@ export default function OurUnderwritingBotSection({ id }: { id?: string }) {
       </div>
       
       {/* Circular Diagrams */}
-      <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
+      <div className="grid md:grid-cols-2 gap-12 lg:gap-16 xl:gap-20"> {/* Adjusted xl:gap */}
         <CircleDiagram title="Risk Factors" labels={diagram1Labels} />
         <CircleDiagram title="Data Sources" labels={diagram2Labels} />
       </div>
