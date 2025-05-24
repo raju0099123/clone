@@ -1,6 +1,7 @@
 import HeroSection from '@/components/sections/HeroSection';
 import PlugAndPlayBanner from '@/components/sections/PlugAndPlayBanner';
 import FeaturesSection from '@/components/sections/FeaturesSection';
+import UnderwritingBotSection from '@/components/sections/UnderwritingBotSection';
 import ValuePropositionSection from '@/components/sections/ValuePropositionSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import CallToActionSection from '@/components/sections/CallToActionSection';
@@ -10,7 +11,8 @@ export default function Home() {
     <>
       <HeroSection />
       <PlugAndPlayBanner id="announcement" />
-      <FeaturesSection id="features" />
+      <FeaturesSection id="overview" /> {/* This is the "Overview" section */}
+      <UnderwritingBotSection id="underwriting-bot" />
       <ValuePropositionSection id="solutions" />
       <TestimonialsSection id="testimonials" />
       <CallToActionSection id="cta" />
