@@ -65,8 +65,8 @@ interface CircleDiagramProps {
 const CircleDiagram: React.FC<CircleDiagramProps> = ({ labels }) => {
   const labelPositionsOuter = [
     { top: '5%', left: '50%', transform: 'translateX(-50%)' }, // Top-Center
-    { top: '50%', left: '2%', transform: 'translateY(-50%)' },  // Middle-Left
-    { top: '50%', right: '2%', transform: 'translateY(-50%)' }, // Middle-Right
+    { top: '50%', left: '1%', transform: 'translateY(-50%)' },  // Middle-Left (Adjusted from 2%)
+    { top: '50%', right: '1%', transform: 'translateY(-50%)' }, // Middle-Right (Adjusted from 2%)
     { bottom: '5%', left: '50%', transform: 'translateX(-50%)' }, // Bottom-Center
   ];
    const labelPositionsInner = [
@@ -92,7 +92,7 @@ const CircleDiagram: React.FC<CircleDiagramProps> = ({ labels }) => {
       {labels.slice(0, 4).map((label, index) => (
         <div
           key={label}
-          className="absolute px-2 py-1 bg-background border border-border rounded-md shadow-md text-xs text-foreground/80 group-hover:shadow-lg transition-shadow duration-300 w-auto max-w-24 text-center"
+          className="absolute px-2 py-1 bg-background border border-border rounded-md shadow-md text-xs text-foreground/80 group-hover:shadow-lg transition-shadow duration-300 w-auto max-w-[80px] sm:max-w-24 text-center"
           style={labelPositionsOuter[index % labelPositionsOuter.length]}
         >
           {label}
@@ -101,7 +101,7 @@ const CircleDiagram: React.FC<CircleDiagramProps> = ({ labels }) => {
        {labels.slice(4, 6).map((label, index) => ( // Handles 5th and potentially 6th label
         <div
           key={label}
-          className="absolute px-2 py-1 bg-background border border-border rounded-md shadow-md text-xs text-foreground/80 group-hover:shadow-lg transition-shadow duration-300 w-auto max-w-24 text-center"
+          className="absolute px-2 py-1 bg-background border border-border rounded-md shadow-md text-xs text-foreground/80 group-hover:shadow-lg transition-shadow duration-300 w-auto max-w-[80px] sm:max-w-24 text-center"
           style={{ ...labelPositionsInner[index % labelPositionsInner.length] }}
         >
           {label}
@@ -139,7 +139,7 @@ export default function OurUnderwritingBotSection({ id }: { id?: string }) {
   const diagram2Labels = ["Internet", "Agent Scope", "Social Media", "LinkedIn", "Industry Sentiment"];
 
   return (
-    <SectionWrapper id={id} className="py-12 md:py-16 lg:py-20">
+    <SectionWrapper id={id} className="py-10 md:py-12 lg:py-16">
       <div className="text-center mb-12 md:mb-16">
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
           Our Underwriting <span className="text-primary">Bot</span>
