@@ -147,17 +147,17 @@ export default function OurUnderwritingBotSection({ id }: { id?: string }) {
       </div>
 
       {/* Process Flow */}
-      <div className="flex flex-col md:flex-row items-center md:items-stretch justify-around space-y-8 md:space-y-0 md:space-x-4 mb-16 md:mb-24 relative px-4">
+      <div className="flex flex-col md:flex-row items-center md:items-stretch justify-around space-y-6 md:space-y-0 md:space-x-2 lg:space-x-4 mb-16 md:mb-24 relative px-4">
         {processSteps.map((step, index) => (
           <React.Fragment key={step.label}>
-            <ProcessStep {...step} /> {/* Removed className conditional padding */}
+            <ProcessStep {...step} className={index === 0 || index === processSteps.length -1 ? "md:px-0 lg:px-2 xl:px-4" : ""} />
             {index < processSteps.length - 1 && (
-              <div className="hidden md:flex flex-col justify-center items-center flex-grow min-w-[50px] relative top-10"> {/* top-10 might need adjustment based on new icon alignment */}
+              <div className="hidden md:flex flex-col justify-center items-center flex-grow min-w-[50px] relative top-10">
                 <div className="w-full h-0.5 border-t-2 border-dashed border-primary/50"></div>
               </div>
             )}
              {index < processSteps.length - 1 && (
-              <div className="flex md:hidden justify-center items-center w-full h-12">
+              <div className="flex md:hidden justify-center items-center w-full h-10">
                 <div className="h-full w-0.5 border-l-2 border-dashed border-primary/50"></div>
               </div>
             )}
