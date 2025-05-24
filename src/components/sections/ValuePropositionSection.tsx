@@ -46,7 +46,7 @@ export default function ValuePropositionSection({ id }: { id?: string }) {
                 src={prop.imageUrl}
                 alt={prop.imageAlt}
                 layout="fill"
-                objectFit="cover" 
+                objectFit="contain" // Changed from "cover" to "contain"
                 className="rounded-lg" // slightly less rounding than parent for inset look
                 data-ai-hint={prop.imageHint}
               />
