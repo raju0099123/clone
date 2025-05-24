@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Footer() {
   return (
     <footer className="bg-muted text-muted-foreground border-t border-border/40">
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-10"> {/* Reduced py-12 to py-10 */}
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8"> {/* Changed py-10 to py-8 */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4" prefetch={false}>
@@ -39,7 +39,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-10 border-t border-border/60 pt-6 text-center"> {/* Reduced mt-12 to mt-10 and pt-8 to pt-6 */}
+        <div className="mt-8 border-t border-border/60 pt-4 text-center"> {/* Changed mt-10 to mt-8 and pt-6 to pt-4 */}
           <p className="text-sm">
             &copy; {new Date().getFullYear()} native orange. All rights reserved.
           </p>
