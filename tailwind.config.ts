@@ -87,15 +87,20 @@ export default {
             height: '0'
           }
         },
-        'subtleBob': { // Renamed from 'bobbing' and kept the transform values
+        'subtleBob': {
           '0%, 100%': { transform: 'translateY(-3%)' },
           '50%': { transform: 'translateY(3%)' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
         }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'subtle-bob': 'subtleBob 3s ease-in-out infinite', // New animation class with 3s duration
+        'subtle-bob': 'subtleBob 3s ease-in-out infinite',
+        marquee: 'marquee 30s linear infinite',
       }
     }
   },
