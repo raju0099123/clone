@@ -50,7 +50,7 @@ const solutionColumns = [
 
 export default function CompleteSolutionSection({ id }: { id?: string }) {
   return (
-    <SectionWrapper id={id} hasBackground>
+    <SectionWrapper id={id} hasBackground className="pt-6 md:pt-8 lg:pt-10">
       <div className="text-center mb-12 md:mb-16">
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
           <span className="text-primary">Nativeorange</span> Complete Solution
