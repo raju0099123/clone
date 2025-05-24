@@ -75,7 +75,7 @@ const CircleDiagram: React.FC<CircleDiagramProps> = ({ labels }) => {
   ];
 
   return (
-    <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 mx-auto group transform transition-transform hover:scale-105">
+    <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto group transform transition-transform hover:scale-105">
       {/* Outer Ring */}
       <div className="absolute inset-0 rounded-full bg-orange-100 dark:bg-orange-500/20 opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
       {/* Middle Ring */}
