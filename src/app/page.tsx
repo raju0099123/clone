@@ -4,8 +4,9 @@ import PlugAndPlayBanner from '@/components/sections/PlugAndPlayBanner';
 import FeaturesSection from '@/components/sections/FeaturesSection';
 import CompleteSolutionSection from '@/components/sections/CompleteSolutionSection';
 import OurUnderwritingBotSection from '@/components/sections/OurUnderwritingBotSection';
-import ValueForCarriersSection from '@/components/sections/ValueForCarriersSection'; // Added import
+import ValueForCarriersSection from '@/components/sections/ValueForCarriersSection';
 import ValuePropositionSection from '@/components/sections/ValuePropositionSection';
+import SecuritySystemSection from '@/components/sections/SecuritySystemSection'; // Added import
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import CallToActionSection from '@/components/sections/CallToActionSection';
 
@@ -17,8 +18,9 @@ export default function Home() {
       <FeaturesSection id="overview" /> {/* This is the "Overview" section */}
       <CompleteSolutionSection id="complete-solution" />
       <OurUnderwritingBotSection id="underwriting-bot" />
-      <ValueForCarriersSection id="value-for-carriers" /> {/* Added new section */}
+      <ValueForCarriersSection id="value-for-carriers" />
       <ValuePropositionSection id="solutions" />
+      <SecuritySystemSection id="security-system" /> {/* Added new section */}
       <TestimonialsSection id="testimonials" />
       <CallToActionSection id="cta" />
       {/* Placeholder for Pricing Section if added later */}
