@@ -147,7 +147,7 @@ export default function OurUnderwritingBotSection({ id }: { id?: string }) {
       </div>
 
       {/* Process Flow */}
-      <div className="flex flex-col md:flex-row items-center md:items-stretch justify-around space-y-6 md:space-y-0 md:space-x-2 lg:space-x-4 mb-16 md:mb-24 relative px-4">
+      <div className="flex flex-col md:flex-row items-center md:items-stretch justify-around space-y-6 md:space-y-0 md:space-x-2 lg:space-x-4 mb-12 md:mb-16 relative px-4">
         {processSteps.map((step, index) => (
           <React.Fragment key={step.label}>
             <ProcessStep {...step} className={index === 0 || index === processSteps.length -1 ? "md:px-0 lg:px-2 xl:px-4" : ""} />
@@ -166,7 +166,7 @@ export default function OurUnderwritingBotSection({ id }: { id?: string }) {
       </div>
       
       {/* Circular Diagrams */}
-      <div className="grid md:grid-cols-2 gap-12 lg:gap-16 xl:gap-24">
+      <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
         <CircleDiagram title="Risk Factors" labels={diagram1Labels} />
         <CircleDiagram title="Data Sources" labels={diagram2Labels} />
       </div>

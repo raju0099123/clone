@@ -32,7 +32,7 @@ const propositions = [
 export default function ValuePropositionSection({ id }: { id?: string }) {
   return (
     <SectionWrapper id={id} className="bg-orange-50 dark:bg-orange-900/30">
-      <div className="space-y-16 md:space-y-24">
+      <div className="space-y-16">
         {propositions.map((prop) => (
           <div key={prop.title} className={`grid lg:grid-cols-2 gap-10 lg:gap-16 items-center ${prop.imageLeft ? 'lg:grid-flow-row-dense' : ''}`}>
             <div className={`space-y-4 md:space-y-6 text-center lg:text-left ${prop.imageLeft ? 'lg:col-start-2' : ''}`}>

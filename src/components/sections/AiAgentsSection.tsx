@@ -35,7 +35,7 @@ export default function AiAgentsSection({ id }: { id?: string }) {
         </p>
       </div>
 
-      <div className="bg-primary p-8 md:p-12 rounded-2xl shadow-2xl">
+      <div className="bg-primary p-8 rounded-2xl shadow-2xl">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {agents.map((agent) => (
             <div

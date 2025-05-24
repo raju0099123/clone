@@ -13,7 +13,7 @@ export default function SectionWrapper({ children, className, id, hasBackground 
     <section 
       id={id} 
       className={cn(
-        'py-12 md:py-16 lg:py-20', // Reduced padding
+        'py-10 md:py-12 lg:py-16', // Reduced padding
         hasBackground ? 'bg-muted' : 'bg-background',
         className
       )}
