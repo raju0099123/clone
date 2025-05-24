@@ -105,11 +105,11 @@ export default function SecuritySystemSection({ id }: { id?: string }) {
 
           {/* Compliance Logos Grid */}
           <div className="w-full md:w-2/3 bg-sky-50 dark:bg-sky-800/50 p-6 rounded-b-lg md:rounded-bl-none md:rounded-r-lg">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3"> {/* Reduced gap */}
               {complianceLogos.map((logo, index) => (
                 <div
                   key={logo.alt + index}
-                  className="relative bg-white dark:bg-card p-3 sm:p-4 rounded-lg shadow-md flex items-center justify-center aspect-[3/2] hover:shadow-lg transition-shadow"
+                  className="relative bg-white dark:bg-card p-2 sm:p-3 rounded-lg shadow-md flex items-center justify-center aspect-[3/2] hover:shadow-lg transition-shadow" /* Reduced padding */
                 >
                   {logo.src ? (
                     <Image
@@ -120,7 +120,7 @@ export default function SecuritySystemSection({ id }: { id?: string }) {
                       data-ai-hint={logo.hint}
                     />
                   ) : (
-                    <logo.component className="w-12 h-12 sm:w-14 sm:h-14 text-primary" aria-label={logo.alt} data-ai-hint={logo.hint}/>
+                    <logo.component className="w-10 h-10 sm:w-12 sm:h-12 text-primary" aria-label={logo.alt} data-ai-hint={logo.hint}/> /* Reduced icon size */
                   )}
                 </div>
               ))}
