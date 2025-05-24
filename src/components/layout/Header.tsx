@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, CalendarDays } from 'lucide-react'; 
+import Image from 'next/image';
 
 export default function Header() {
   const navItems = [
@@ -13,12 +14,14 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-screen-2xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
-          <div className="bg-primary text-primary-foreground h-7 w-7 flex items-center justify-center rounded-sm font-bold text-lg">
-            H
-          </div>
-          <span className="text-xl font-semibold text-foreground">
-            native orange
-          </span>
+          <Image
+            src="https://nativeorange.ai/images/navtiveorange-logo.png"
+            alt="Native Orange Logo"
+            width={150} // Adjust width as needed
+            height={40} // Adjust height as needed
+            className="object-contain"
+            data-ai-hint="company logo"
+          />
         </Link>
         
         <nav className="hidden md:flex items-center space-x-6">
@@ -51,12 +54,14 @@ export default function Header() {
             <SheetContent side="right">
               <div className="grid gap-4 py-6">
                 <Link href="/" className="flex items-center gap-2 mb-4" prefetch={false}>
-                  <div className="bg-primary text-primary-foreground h-7 w-7 flex items-center justify-center rounded-sm font-bold text-lg">
-                    H
-                  </div>
-                  <span className="text-xl font-semibold text-foreground">
-                     native orange
-                  </span>
+                  <Image
+                    src="https://nativeorange.ai/images/navtiveorange-logo.png"
+                    alt="Native Orange Logo"
+                    width={150} // Adjust width as needed
+                    height={40} // Adjust height as needed
+                    className="object-contain"
+                    data-ai-hint="company logo"
+                  />
                 </Link>
                 {navItems.map((item) => (
                   <Link

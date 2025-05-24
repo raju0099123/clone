@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Bot } from 'lucide-react'; // Changed MountainIcon to Bot
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -8,10 +8,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4" prefetch={false}>
-              <Bot className="h-6 w-6 text-primary" /> {/* Updated Icon */}
-              <span className="text-xl font-bold text-foreground">
-                <span className="text-primary">native</span> orange
-              </span>
+              <Image
+                src="https://nativeorange.ai/images/navtiveorange-logo.png"
+                alt="Native Orange Logo"
+                width={180} // Adjust width as needed for footer
+                height={48} // Adjust height as needed for footer
+                className="object-contain"
+                data-ai-hint="company logo"
+              />
             </Link>
             <p className="text-sm">
               Underwriting Products Powered by Generative AI.
