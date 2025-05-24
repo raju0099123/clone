@@ -56,7 +56,7 @@ export default function SecuritySystemSection({ id }: { id?: string }) {
       </div>
 
       {/* Nativeorange Security EPICS Block */}
-      <div className="bg-rose-50 dark:bg-rose-900/50 p-6 md:p-8 rounded-xl shadow-lg mb-4 relative">
+      <div className="bg-rose-50 dark:bg-rose-900/50 p-6 md:p-8 rounded-xl shadow-lg mb-4 relative max-w-5xl mx-auto">
         <h3 className="text-lg font-semibold text-foreground mb-1 text-center">
           Nativeorange Security EPICS
         </h3>
@@ -87,7 +87,7 @@ export default function SecuritySystemSection({ id }: { id?: string }) {
       </div>
 
       {/* Compliance/Partner Logos Block */}
-      <div className="bg-sky-100 dark:bg-sky-800/30 p-0.5 rounded-xl shadow-lg overflow-hidden">
+      <div className="bg-sky-100 dark:bg-sky-800/30 p-0.5 rounded-xl shadow-lg overflow-hidden max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row">
           {/* Google Cloud Section */}
           <div className="w-full md:w-1/3 bg-sky-600 dark:bg-sky-700 p-6 flex flex-col items-center justify-center text-center text-white rounded-t-lg md:rounded-tr-none md:rounded-l-lg">
