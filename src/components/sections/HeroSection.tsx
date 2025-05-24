@@ -1,6 +1,8 @@
+
 import Image from 'next/image';
 import SectionWrapper from '@/components/shared/SectionWrapper';
 import { Users, Briefcase, FileText, TrendingUp } from 'lucide-react';
+import AnimatedStatNumber from '@/components/shared/AnimatedStatNumber';
 
 const stats = [
   {
@@ -55,7 +57,7 @@ export default function HeroSection() {
 
       {/* Stats Bar */}
       <div className="mt-10 md:mt-12 lg:mt-16">
-        <div className="bg-card text-card-foreground p-6 sm:p-8 rounded-xl shadow-xl max-w-4xl mx-auto">
+        <div className="bg-white/30 dark:bg-black/30 backdrop-blur-lg p-6 sm:p-8 rounded-xl shadow-2xl border border-white/40 dark:border-white/20 max-w-4xl mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
             {stats.map((stat, index) => (
               <div
@@ -64,9 +66,12 @@ export default function HeroSection() {
                 role="figure"
                 aria-labelledby={`stat-label-${index}`}
               >
-                <stat.icon className="w-7 h-7 sm:w-8 sm:h-8 mb-2 text-foreground/80" aria-hidden="true" />
-                <p className="text-xl sm:text-2xl font-bold text-foreground">{stat.metric}</p>
-                <p id={`stat-label-${index}`} className="text-xs sm:text-sm text-muted-foreground mt-1">{stat.label}</p>
+                <stat.icon className="w-7 h-7 sm:w-8 sm:h-8 mb-2 text-primary-foreground/80" aria-hidden="true" />
+                <AnimatedStatNumber 
+                  metric={stat.metric} 
+                  className="text-xl sm:text-2xl font-bold text-primary-foreground" 
+                />
+                <p id={`stat-label-${index}`} className="text-xs sm:text-sm text-primary-foreground/80 mt-1">{stat.label}</p>
               </div>
             ))}
           </div>
