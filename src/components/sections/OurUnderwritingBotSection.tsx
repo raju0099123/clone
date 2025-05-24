@@ -35,7 +35,7 @@ const NativeOrangeNIcon = ({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) => {
 };
 
 const ProcessStep: React.FC<ProcessStepProps> = ({ icon: IconComponent, label, info, isNativeIcon, className }) => (
-  <div className={cn("flex flex-col items-center text-center relative group transform transition-transform hover:scale-105", className)}>
+  <div className={cn("flex flex-col items-center text-center relative group transform transition-transform hover:scale-105 px-1 sm:px-2", className)}>
     <div className="h-28 flex flex-col justify-end"> {/* Placeholder for card height + margin. Approx h-24 for card + mb-4 (1rem) */}
       {info && (
         <Card className="mb-4 w-full max-w-[14rem] bg-blue-50 border-blue-200 shadow-lg dark:bg-blue-900/30 dark:border-blue-700 transition-all duration-300 group-hover:shadow-xl">
@@ -173,3 +173,4 @@ export default function OurUnderwritingBotSection({ id }: { id?: string }) {
     </SectionWrapper>
   );
 }
+
