@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 import SectionWrapper from '@/components/shared/SectionWrapper';
-import { Building, ShieldAlert } from 'lucide-react'; // Using Building for the shield/pillar icon
+import { Building } from 'lucide-react'; // Using Building for the shield/pillar icon
 import { cn } from '@/lib/utils';
 
 const epics = [
@@ -57,13 +57,13 @@ export default function SecuritySystemSection({ id }: { id?: string }) {
 
       {/* Nativeorange Security EPICS Block */}
       <div className="bg-rose-50 dark:bg-rose-900/50 p-6 md:p-8 rounded-xl shadow-lg mb-4 relative">
-        <h3 className="text-lg font-semibold text-foreground mb-1 text-center sm:text-left">
+        <h3 className="text-lg font-semibold text-foreground mb-1 text-center">
           Nativeorange Security EPICS
         </h3>
-        <div className="flex flex-col sm:flex-row items-center gap-4 my-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 my-4">
           <NativeOrangeEpicsLogo />
           <div className="hidden sm:block border-l border-gray-300 dark:border-gray-600 h-8 mx-2"></div>
-          <div className="flex flex-wrap justify-center sm:justify-start gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {epics.map((epic) => (
               <div
                 key={epic.name}
@@ -74,7 +74,7 @@ export default function SecuritySystemSection({ id }: { id?: string }) {
             ))}
           </div>
         </div>
-        <p className="text-sm text-foreground/60 dark:text-foreground/70 text-center sm:text-left">
+        <p className="text-sm text-foreground/60 dark:text-foreground/70 text-center">
           Leverage GCP security posture and best practices.
         </p>
         {/* Triangle Connector */}
@@ -91,14 +91,15 @@ export default function SecuritySystemSection({ id }: { id?: string }) {
         <div className="flex flex-col md:flex-row">
           {/* Google Cloud Section */}
           <div className="w-full md:w-1/3 bg-sky-600 dark:bg-sky-700 p-6 flex flex-col items-center justify-center text-center text-white rounded-t-lg md:rounded-tr-none md:rounded-l-lg">
-            <Image
-              src="https://nativeorange.ai/images/cloud-logo.png"
-              alt="Google Cloud Logo"
-              width={80}
-              height={80}
-              className="mb-3"
-              data-ai-hint="google cloud"
-            />
+            <div className="relative w-20 h-20 mb-3">
+              <Image
+                src="https://nativeorange.ai/images/cloud-logo.png"
+                alt="Google Cloud Logo"
+                layout="fill"
+                objectFit="contain"
+                data-ai-hint="google cloud"
+              />
+            </div>
             <p className="font-semibold text-lg">Google Cloud</p>
           </div>
 
@@ -108,19 +109,18 @@ export default function SecuritySystemSection({ id }: { id?: string }) {
               {complianceLogos.map((logo, index) => (
                 <div
                   key={logo.alt + index}
-                  className="bg-white dark:bg-card p-3 sm:p-4 rounded-lg shadow-md flex items-center justify-center aspect-[3/2] hover:shadow-lg transition-shadow"
+                  className="relative bg-white dark:bg-card p-3 sm:p-4 rounded-lg shadow-md flex items-center justify-center aspect-[3/2] hover:shadow-lg transition-shadow"
                 >
                   {logo.src ? (
                     <Image
                       src={logo.src}
                       alt={logo.alt}
-                      width={100}
-                      height={60}
+                      layout="fill"
                       objectFit="contain"
                       data-ai-hint={logo.hint}
                     />
                   ) : (
-                    <logo.component className="w-10 h-10 sm:w-12 sm:h-12 text-primary" aria-label={logo.alt} data-ai-hint={logo.hint}/>
+                    <logo.component className="w-12 h-12 sm:w-14 sm:h-14 text-primary" aria-label={logo.alt} data-ai-hint={logo.hint}/>
                   )}
                 </div>
               ))}
