@@ -1,5 +1,6 @@
 <h2> Hi, I'm Banoth Sandeep Naik!
-  <img src="https://i.giphy.com/dYx3YFq2OiVLIssQH9.webp" width="60" height ='20'>
+  <img src="[https://i.giphy.com/dYx3YFq2OiVLIssQH9.webp](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHBpbTFiZzB1ZnZrbG1yeXltazFkNmFyZW81OHNrNWJpdTA0eHRidyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mGo8dkPOF6GLm/giphy.gif)
+    " width="60" >
 </h2>
 
 <!-- Rounded GIF (smaller + lower position) -->
