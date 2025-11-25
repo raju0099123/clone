@@ -1,5 +1,5 @@
 <h2> Hi, I'm Banoth Sandeep Naik!
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="60">
+  <img src="https://i.giphy.com/dYx3YFq2OiVLIssQH9.webp" width="60">
 </h2>
 
 <!-- Rounded GIF (smaller + lower position) -->
