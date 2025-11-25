@@ -1,48 +1,45 @@
-<h1 align="center">Hi, I'm Banoth Sandeep Naik</h1>
+<h2> Hi, I'm Banoth Sandeep Naik!
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="60">
+</h2>
 
-<h3 align="center">
-  Passionate Frontend Developer | Aspiring Full-Stack Engineer | AI Tools Enthusiast <br/>
-  📍 Based in India • Focused on MERN Stack • Lifelong Learner
-</h3>
+<img align="right" src="https://media.giphy.com/media/LMcB8XospGZO8UQq87/giphy.gif" width="260">
 
-<div align="center">
-  <img height="180" src="https://media.giphy.com/media/78XCFBGOlS6keY1Bil/giphy.gif" />
-</div>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=mrbanoth-dev&label=Profile%20views&color=0e75b6&style=flat" />
+<p>
+  <em>
+    Frontend Developer • Aspiring Full-Stack Engineer • AI Tools Explorer  
+    <br>
+    Based in India • Focused on MERN Stack  
+  </em>
 </p>
 
-<!-- ===== Centered Bullet Points ===== -->
+<!-- SOCIAL BADGES -->
+<p>
+  <a href="https://www.linkedin.com/in/banothsandeepnaik">
+    <img src="https://img.shields.io/badge/-Banoth%20Sandeep%20Naik-blue?style=flat-square&logo=Linkedin&logoColor=white">
+  </a>
 
-<div align="center">
-
-  🌱 I’m currently working on <b>Full Stack Development (MERN)</b> <br/><br/>
-  📘 I’m learning <b>Frameworks, AI Tools, Backend & Full-Stack concepts</b> <br/><br/>
-  🌐 All of my projects → <a href="https://mrbanoth.online">mrbanoth.online</a> <br/><br/>
-  💬 Ask me about <b>Web Dev Basics & AI Tools Usage</b> <br/><br/>
-  📫 Reach me at <b>itsmrbanoth@gmail.com</b> <br/><br/>
-  😄 Fun fact: <b>I speak funny</b>
-
-</div>
-
-<br/>
-
-<h3 align="center">Connect with me:</h3>
-<p align="center">
-  <!-- Your social icons here -->
-</p>
-
-<h3 align="center">Languages and Tools:</h3>
-
-<p align="center">
-  <!-- Skill icons here -->
-</p>
-
-<h3 align="center">Support:</h3>
-
-<p align="center">
+  <a href="https://github.com/MrBanoth-dev">
+    <img src="https://img.shields.io/github/followers/MrBanoth-dev?label=Follow&style=social">
+  </a>
+  
   <a href="https://buymeacoffee.com/mrbanoth">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210"/>
+    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=flat-square&logo=buymeacoffee&logoColor=black">
   </a>
 </p>
+
+<h3>
+  <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50">
+  A little more about me...
+</h3>
+
+
+```javascript
+const sandeep = {
+  pronouns: "he" | "him",
+  code: ["JavaScript", "HTML", "CSS", "C", "TypeScript"],
+  tools: ["React", "Node.js", "Express", "MongoDB", "Tailwind", "Bootstrap"],
+  learning: ["Full-Stack Development", "AI Tools", "Backend Engineering", "MERN"],
+  portfolio: "https://mrbanoth.online",
+  funFact: "I speak funny 😄",
+  challenge: "Building full MERN projects & improving backend skills"
+}
