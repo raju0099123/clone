@@ -2,7 +2,12 @@
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="60">
 </h2>
 
-<img align="right" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTNhbHJzazRiN2dtMnNseGpmaDVha3B3ZjJ1emQ5Zmt3NW45NGNhZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZS57kdXudVqsDX0TLH/giphy.gif" width="260">
+<img 
+  align="right" 
+  src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTNhbHJzazRiN2dtMnNseGpmaDVha3B3ZjJ1emQ5Zmt3NW45NGNhZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZS57kdXudVqsDX0TLH/giphy.gif" 
+  width="230"
+  style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"
+/>
 
 <p>
   <em>
@@ -43,3 +48,4 @@ const sandeep = {
   funFact: "I speak funny 😄",
   challenge: "Building full MERN projects & improving backend skills"
 }
+
